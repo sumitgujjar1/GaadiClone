@@ -9,7 +9,17 @@ var carSchema = new mongoose.Schema({
     brand: String, 
     varient: String,
     Mileage: Number,
-    min_price:Number
+    min_price:Number,
+    image: string,
+    max_price:Number,
+    engine: Number,
+    anti_lock: String,
+    airbag: String,
+    turbo_charger: String,
+    integrated: String,
+    usb: String,
+    din: String,
+    launch_year: Number
 });
 
 // Return model
