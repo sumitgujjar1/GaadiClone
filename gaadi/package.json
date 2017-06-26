@@ -1,9 +1,9 @@
 {
-  "name": "ReST-API",
+  "name": "Gaadi Clone ",
   "version": "1.0.0",
-  "description": "A simple RESTFul API created using nodejs that talks to Mongodb database",
+  "description": "Gaadi.com Website Clone Build in MEAN Stack",
   "main": "server.js",
-  "author": "codenx",
+  "author": "Sumit Kasana",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.13.3",
