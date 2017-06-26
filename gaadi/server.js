@@ -7,8 +7,7 @@ var router = express.Router();
 var path = require('path')
 // MongoDB
 
-mongoose.connect(process.env.OPENSHIFT_MONGODB_DB_URL || 'mongodb://sumit:14314300@ds123182.mlab.com:23182/zoruk_india');
-
+mongoose.connect(process.env.OPENSHIFT_MONGODB_DB_URL || <// Your Mongo Mlab Database Url Here // > 
 
 // Express
 var app = express();
