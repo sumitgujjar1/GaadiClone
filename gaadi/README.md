@@ -24,10 +24,8 @@ To start the application, run the following 2 commands in your terminal (command
 
 Prefix sudo if working in linux machine
 
-Start mongodb
-Open http://www.mlab.com
-Sign up ( Get 500Mb  free )
-Just replace the the mongoDB url . Thats it !!!! Done 
+Start mongodb Open http://www.mlab.com Sign up ( Get 500Mb  free ) Just replace the the mongoDB url . Thats it !!!! Done
+ 
 -----------------------
 Windows
 
