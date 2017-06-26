@@ -8,7 +8,7 @@ var path = require('path')
 // MongoDB
 
 mongoose.connect(process.env.OPENSHIFT_MONGODB_DB_URL || 'mongodb://sumit:14314300@ds123182.mlab.com:23182/zoruk_india');
-// mongoose.connection.on('error', function(){});
+
 
 // Express
 var app = express();
@@ -19,10 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Routes
 app.use('/api', require('./routes/api'));
- app.get('/api/cars/:id', function(req, res){
-    // return data for customer....
-  });
-
+//Routes for HTML5 Mode 
  app.all('/*', function(req, res) {
     res.sendfile('public/index.html');
   });
