@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<html ng-app="myApp">
+<head>
+  <title>Gaadi Clone By Sumit Kasana</title>
+<link rel="stylesheet" href="css/ngProgress.css">
+<link rel="stylesheet" href="css/toaster.css">
+<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<base href="/" />
+<style>
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+display: none !important;
+}
+</style>
+</head>
+<body ng-cloak>
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="/"><img src="img/gaadi-logo1.png" alt="gaadi-logo"></a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+    </ul>
+    <form class="form-inline  col-lg-6" ng-controller="searchCtrl">
+     <input class="form-control col-sm-8" type="text" ng-model="data" placeholder="Search Cars &amp; Offers Here ">
+      <button class="btn btn-outline-success btn-search col-sm-2" type="submit" ng-click="result()">Search</button>
+      <br>
+      <div class="searchResult" ng-repeat="test in search">
+      <ul>
+      <li><a ui-sref="viewCar({id:test._id})">{{test.brand}}</a></li>
+      </ul>
+            
+      </div>
+    </form>
+
+    <ul class="navbar-nav">
+    <li class="nav-item">
+    <a class="nav-link" href="#" ><i class="fa fa-map-marker"> </i> New Delhi  </a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="#"><i class="fa fa-user"></i> My Account </a>
+    </li>
+    </ul>
+  </div>
+</nav>
+<div class="menutop">
+ <div class="leftbtn">
+<a class="active" > <i class="fa fa-car"> </i> Cars </a>
+<a class=""><i class="fa fa-motorcycle" aria-hidden="true"></i> Bikes</a>
+</div>
+<ul class="nav">
+<li> <a href="/cars" > Used </a></li>
+<li> <a href="#" > New </a></li>
+<li> <a href="#" > Compare </a></li>
+<li> <a href="#" > News &amp; Reviews </a></li>
+<li> <a href="#" > Compare </a></li>
+</ul>
+</div>
+
+<div ui-view></div>
+<div data-loading></div>
+<toaster-container toaster-options="{'time-out': 3000, 'close-button':true, 'animation-class': 'toast-top-center'}"></toaster-container>
+
+<script src="js/angular.min.js"></script>
+<script src="js/angular-resource.min.js"></script>
+<script src="js/angular-animate.min.js"></script>
+<script src="js/ngProgress.min.js"></script>
+<script src="js/toaster.js"></script>
+<script src="app/app.js"></script>
+<script src="app/products.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+</body>
+</html>

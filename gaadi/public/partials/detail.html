@@ -1,0 +1,153 @@
+
+   <div class="menutop" style="background: orange;">
+ <div class="container">
+<ul class="nav" style="float: left;">
+<li> <a href="" class="active" > Overview </a><i class="arrowup"></i></li>
+<li> <a href="#" > Price  </a></li>
+<li> <a href="#" > Picture </a></li>
+<li> <a href="#" > Compare </a></li>
+<li> <a href="#" > Spec. </a></li>
+</ul>
+
+<div class="carData clear">
+<h1 class="carTitle">{{car.brand}} {{car.model_name}}</h1>
+</div>
+<div class="carDetails">
+<div class="left">
+		<div class="pricebox">{{car.min_price}} - {{car.max_price}} Lakh*
+			<div class="showroom">Ex. Showroom Price </div>
+		</div>
+	<a class="button-link" href="#">View On Road Price </a>
+	<div class="clear"></div>
+	<div class="offerbox clearfix">
+    <i class="fa fa-tags icon-price"></i>
+    <span> Get exclusive offers, test drive &amp; low-interest loan from authorized dealers </span>
+    <a class = "button-accent" href="#" >VIEW JUNE OFFERS</a></div>
+
+</div>
+<div class="right">
+<img src="./img/{{car.image.image1}}" /> 
+
+<div class="featureNavBar">
+<a ui-sref="viewImages({id:car._id})" > <i class="fa fa-file-image-o" aria-hidden="true"></i> Pictures </a>
+<a href="#" class=""><i class="fa fa-play-circle" aria-hidden="true"></i> Videos </a>
+<a href="#" class=""> <i class="fa fa-list" aria-hidden="true"></i>
+Colors </a>
+</div>
+</div>
+
+</div>
+<div class="tableData">
+<table>
+<thead>
+	<tr>
+	<th class="tophead title">
+	<span class="model_overview"><i class="fa fa-tachometer" aria-hidden="true"></i>
+</span>
+	Performance
+	</th>
+	</tr>
+</thead>
+<tbody>
+<tr>
+	<td class="mileage"> Mileage</td>
+	<td class="kmpl"><span>{{car.Mileage}} kmpl</span></td>
+</tr>
+<tr>
+	<td class="mileage">Engine</td>
+	<td class="kmpl"><span>{{car.engine}} CC</span></td>
+</tr>
+</tbody>
+
+</table>
+<table>
+<thead>
+	<tr>
+	<th class="tophead title">
+	<span class="model_overview"><i class="fa fa-car" aria-hidden="true"></i>
+</span>
+	Safety
+	</th>
+	</tr>
+</thead>
+<tbody>
+<tr>
+	<td class="mileage"> Anti-Lock</td>
+	<td class="kmpl"><span>{{car.anti_lock}} </span></td>
+</tr>
+<tr>
+	<td class="mileage">Driver Airbag</td>
+	<td class="kmpl"><span>{{car.airbag}} </span></td>
+</tr>
+</tbody>
+
+</table>
+<table>
+<thead>
+	<tr>
+	<th class="tophead title">
+	<span class="model_overview"><i class="fa fa-cogs" aria-hidden="true"></i>
+</span>
+	Engine
+	</th>
+	</tr>
+</thead>
+<tbody>
+<tr>
+	<td class="mileage"> Turbo Charger</td>
+	<td class="kmpl"><span>{{car.turbo_charger}} </span></td>
+</tr>
+<tr>
+	<td class="mileage"></td>
+	<td class="kmpl"><span></span></td>
+</tr>
+</tbody>
+
+</table>
+<table>
+<thead>
+	<tr>
+	<th class="tophead title">
+	<span class="model_overview"><i class="fa fa-bullhorn" aria-hidden="true"></i></span>
+	Entertainment
+	</th>
+	</tr>
+</thead>
+<tbody>
+<tr>
+	<td class="mileage"> USB &amp; AUX</td>
+	<td class="kmpl"><span>{{car.usb}}</span></td>
+</tr>
+<tr>
+	<td class="mileage">Integrated 2Din</td>
+	<td class="kmpl"><span>{{car.integrated}}</span></td>
+</tr>
+</tbody>
+
+</table>
+<table>
+<thead>
+	<tr>
+	<th class="tophead title">
+	<span class="model_overview"><i class="fa fa-bullhorn" aria-hidden="true"></i></span>
+	Calculators
+	</th>
+	</tr>
+</thead>
+<tbody>
+<tr>
+	<td class="mileage"> Mileage</td>
+	<td class="kmpl"><span>{{car.Mileage}} kmpl</span></td>
+</tr>
+<tr>
+	<td class="mileage">Engine</td>
+	<td class="kmpl"><span>{{car.engine}} CC</span></td>
+</tr>
+</tbody>
+
+</table>
+</div>
+</br>
+<br><br>
+<h1> Page ENds Here </h1>
+</div>

@@ -1,0 +1,49 @@
+<!-- <div ng-repeat="find in viewcars">
+<span>{{find.model_name}}</span>
+</div> -->
+
+<div class="filterArea">
+		<div class="container">
+			<ul>
+			<li> <a href="#" >Area </a> </li>
+			<li> <a href="#" >Price </a> </li>
+			<li> <a href="#" >Brand  </a> </li>
+			<li> <a href="#" >Year </a> </li>
+			<li> <a href="#" >First </a> </li>
+			<li> <a href="#" >First </a> </li>
+			</ul>
+		</div>
+</div>
+<div class="container">
+<div class="viewContainer" ng-controller="carsCtrl">
+<div class="col-lg-12"> 
+<h1> View All Cars in NCR </h1> 
+<div class="sortBy">
+<span class="sort">Sort By :</span>
+	<select><option>Relavance</option><option>Date</option><option>Price ( Low to High )</option></select>
+	</div>
+</div>
+<div class="brandFilter">
+<ul>
+	<li ng-repeat="x in brands"><span ng-click="filtercar(x.brand)" >{{x.brand}}</span></li>
+</ul>
+</div>
+  <div class="card animated fadeIn" style="width:20rem;" ng-repeat="x in viewcars" >
+  <img class="card-img-top" src="./img/{{x.image.image1}}" alt="Card image cap">
+  <span class="featured"><span>Featured</span></span>
+  <div class="card-block">
+  <h3>{{x.brand}} {{x.model_name}}</h3>
+    <p class="card-text">Start at @ <span class="price">{{x.min_price}} </span> Lakh</p>
+     <span><i class="fa fa-map-marker"></i> Delhi NCR</span>
+    <ul>
+    	<li>{{x.Mileage}} KMPL</li>
+    	<li>{{x.engine}} CC</li>
+    	<li>{{x.launch_year}}</li>
+    </ul>
+    <div class="text-center">
+    <button class="btn btn-view" ui-sref="viewCar({id:x._id})" >View All Details</button>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
